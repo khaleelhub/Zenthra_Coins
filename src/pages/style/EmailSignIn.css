@@ -1,0 +1,80 @@
+.Card {
+    margin-top: 1px;
+    width: 100%;
+    padding: 5px;
+    text-align: center; /* Center text */
+}
+
+.Title {
+    font-size: 30px;
+    text-shadow: 1px 1px 7px #bfbfbf;
+}
+
+.Subtitle {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.InputsCard {
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;         /* ➔ Make inputs centered */
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    background: #e3e3e3;
+    height: 39px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 350px;
+    margin-top: 30px;
+    padding-left: 10px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    transition: border 0.3s ease;
+}
+input:focus {
+    border: 2px solid #091eff; /* Stronger border on focus */
+}
+
+.EmailBtn {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    font-weight: bold;
+    color: aliceblue;
+    background: #091eff;
+    border-radius: 30px;
+    width: 280px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.EmailBtn:hover {
+    background: #0015d4; /* Darker blue on hover */
+    transform: scale(1.05);
+}
+
+.backToSign {
+    color: #2e333d;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.backToSign:hover {
+    color: #091eff;
+}
+
+.Fabckword {
+    color: #091eff;
+}

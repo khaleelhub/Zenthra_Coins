@@ -1,0 +1,252 @@
+/* Container for SignIn page */
+.signInContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f7fc; /* Light background */
+  padding: 20px;
+}
+
+
+
+.signUpMethods{
+  margin-top: 15%;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  
+}
+
+/* Main title for SignIn */
+.signInTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Subtitle under title */
+.signInSubtitle {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+/* Container for the form fields */
+.formField {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Container for the buttons */
+.signInButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Common style for buttons */
+.signInBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px; /* Rounded corners */
+  width: 280px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.BackToCreatedAccount {
+  color:#777;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.signInBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Google button */
+.signInBtn.google {
+  background-color: #db4437;
+  color: white;
+}
+
+.signInBtn.google:hover {
+  background-color: #c1351d;
+}
+
+/* Email button */
+.signInBtn.email {
+  background-color: #4285f4;
+  color: white;
+}
+
+.signInBtn.email:hover {
+  background-color: #2a64c9;
+}
+
+/* Phone button */
+.signInBtn.phone {
+  background-color: #0f9d58;
+  color: white;
+}
+
+.signInBtn.phone:hover {
+  background-color: #0b7c44;
+}
+
+/* Icon styling */
+.signIcon {
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+}
+
+/* Icon hover effect */
+.signInBtn:hover .signIcon {
+  transform: rotate(15deg);
+}
+
+/* Loading spinner (added for email sign-in loading state) */
+.loadingSpinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #4285f4;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Container for SignUp link */
+.signUpContainer {
+  margin-top: 30px;
+}
+
+/* Styling for the prompt text */
+.signUpPrompt {
+  font-size: 1rem;
+  color: #555;
+  font-weight: 500;
+}
+
+/* SignUp link */
+.signUpLink {
+  color: #4285f4;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.signUpLink:hover {
+  color: #3367d6; /* Darker shade for hover */
+  text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .signInTitle {
+      font-size: 2rem;
+  }
+
+  .signInSubtitle {
+      font-size: 1rem;
+  }
+
+  .signInBtn {
+      width: 250px; /* Adjust button width on mobile */
+  }
+
+  .signInContainer {
+      padding: 15px;
+  }
+
+  .signUpContainer {
+      margin-top: 20px;
+  }
+}
+
+/* Desktop responsiveness */
+@media (min-width: 1200px) {
+  .signInContainer {
+      max-width: 500px;
+      margin: auto;
+      background-color: #ffffff; /* White background for larger screens */
+      border-radius: 10px;
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Styling for social sign-in button container */
+.socialSignInContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Google Sign-In Button Styling */
+.googleSignInBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  width: 280px;
+  background-color: #db4437;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.googleSignInBtn:hover {
+  background-color: #c1351d;
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.googleIcon {
+  font-size: 1.5rem;
+}
+
+/* Styling for error message */
+.error {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Styling for forgot password link */
+.passwordResetLink {
+  color: #4285f4;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.passwordResetLink:hover {
+  color: #3367d6;
+  text-decoration: underline;
+}

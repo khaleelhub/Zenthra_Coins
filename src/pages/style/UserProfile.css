@@ -1,0 +1,186 @@
+/* General container */
+.profile-container {
+    background-color: #f4f4f9;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Heading style */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Section for profile details */
+.profile-info {
+    margin-bottom: 30px;
+}
+
+/* Style for each profile item */
+.profile-item {
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Label styles */
+label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Input and textarea styles */
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+/* Profile details (e.g., balance, bio) */
+span {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Profile picture container */
+.profile-item img {
+    border-radius: 50%;
+    margin-top: 10px;
+    max-width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+/* Buttons and actions */
+.profile-actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-sizing: border-box;
+}
+
+.save-button {
+    background-color: #4caf50;
+    color: white;
+    min-width: 120px;
+}
+
+.edit-button {
+    background-color: #ffa500;
+    color: white;
+    min-width: 120px;
+}
+
+.logout-button {
+    background-color: #f44336;
+    color: white;
+    min-width: 120px;
+}
+.btn-wallet {
+    background-color:rgb(4, 38, 230);
+    color: white;
+    min-width: 120px;
+}
+button:hover {
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Styles for the logout button (red theme) */
+.logout-button {
+    margin-left: 10px;
+}
+
+.profile-actions button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Device Information and Location section */
+.profile-item span.device-info {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Styling for different sections */
+.profile-container .profile-item {
+    margin-bottom: 20px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .profile-container {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .profile-info {
+        margin-bottom: 20px;
+    }
+
+    .profile-item {
+        margin-bottom: 15px;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-actions button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .profile-container img {
+        max-width: 100px;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input, textarea {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,215 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #eef2f3, #8e9eab);
+    min-height: 100vh;
+}
+
+/* Title Section */
+.TitleContainer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.Title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.Subtitle {
+    font-size: 20px;
+    color: #555;
+}
+
+/* Input Box Styling */
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 0 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.inputBox input {
+    margin-bottom: 20px;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+    font-size: 16px;
+    outline: none;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.inputBox input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Password Strength Bar */
+.passwordStrength {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #777;
+    text-align: center;
+}
+
+.strength-level {
+    margin-top: 8px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.level-1 { background-color: #f44336; color: white; }
+.level-2 { background-color: #ff9800; color: white; }
+.level-3 { background-color: #ffc107; color: #222; }
+.level-4 { background-color: #4caf50; color: white; }
+.level-5 { background-color: #2196f3; color: white; }
+
+/* Button Styling */
+.btnNext, .btnVerify {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.next, .verify {
+    background: linear-gradient(90deg, #007bff 0%, #0056b3 100%);
+    color: #fff;
+    font-size: 18px;
+    padding: 14px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.next:disabled, .verify:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+.next:hover:not(:disabled), .verify:hover:not(:disabled) {
+    background: linear-gradient(90deg, #0056b3 0%, #004494 100%);
+    transform: translateY(-2px);
+}
+
+/* OTP Box Styling */
+.otpBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.otpBox input {
+    margin-bottom: 20px;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+    font-size: 16px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 300px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.otpBox input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Terms and Conditions */
+.termsAndConditions {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #666;
+    padding: 0 20px;
+}
+
+.termsLink, .privacyLink {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.termsLink:hover, .privacyLink:hover {
+    color: #0056b3;
+}
+
+/* Back to Sign In */
+.backToSignIn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signInLink {
+    color: #007bff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.signInLink:hover {
+    color: #0056b3;
+}
+
+/* Toast Message */
+.toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    background: #4caf50;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    z-index: 999;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    animation: fadeInOut 3s forwards;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* ReCaptcha Styling */
+#recaptcha-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .Title {
+        font-size: 30px;
+    }
+
+    .Subtitle {
+        font-size: 16px;
+    }
+
+    .inputBox input, .otpBox input {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .next, .verify {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}

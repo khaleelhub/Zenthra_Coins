@@ -1,0 +1,183 @@
+/* Container for SignUp page */
+.signUpContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f7fc75;
+  padding: 2px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Main title for SignUp */
+.signUpTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Subtitle under title */
+.signUpSubtitle {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 40px;
+  align-self:center;
+}
+
+/* Input field styling */
+.signUpInput {
+  padding: 17px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.signUpInput:focus {
+  border-color: #4285f4;
+  background-color: #f0faff;
+}
+
+/* Button styling */
+.signUpBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  width: 280px;
+  align-self: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-top: 12px;
+  background: #4285f4;
+  color: #ddd;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.signUpBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  background: #3367d6; /* Slightly darker on hover */
+}
+
+/* Google button */
+.signUpBtn.google {
+  background-color: #db4437;
+  color: white;
+}
+
+.signUpBtn.google:hover {
+  background-color: #c1351d;
+}
+
+/* Email button */
+.signUpBtn.email {
+  background-color: #4285f4;
+  color: white;
+}
+
+.signUpBtn.email:hover {
+  background-color: #2a64c9;
+}
+
+/* Phone button */
+.signUpBtn.phone {
+  background-color: #0f9d58;
+  color: white;
+}
+
+.signUpBtn.phone:hover {
+  background-color: #0b7c44;
+}
+
+/* Icon styling */
+.signIcon {
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+}
+
+.signUpBtn:hover .signIcon {
+  transform: rotate(15deg);
+}
+
+/* OR separator */
+.orContainer {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orText {
+  font-size: 1rem;
+  color: #777;
+  font-weight: 500;
+}
+
+/* Sign In prompt */
+.signInPrompt {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.signInLink {
+  color: #4285f4;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.signInLink:hover {
+  color: #3367d6;
+  text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .signUpTitle {
+      font-size: 2rem;
+  }
+
+  .signUpSubtitle {
+      font-size: 1rem;
+  }
+
+  .signUpInput {
+      font-size: 0.9rem;
+  }
+
+  .signUpBtn {
+      width: 250px;
+  }
+
+  .signUpContainer {
+      padding: 10px;
+      width: 105%;
+  }
+
+  /* Adjusting margin bottom for form elements */
+  .signUpForm {
+      margin-bottom: 20px;
+      
+  }
+}

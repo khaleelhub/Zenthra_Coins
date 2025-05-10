@@ -1,0 +1,11 @@
+# Ignore node_modules (Vercel installs dependencies automatically)
+node_modules/
+
+# Ignore build directory (Vercel builds your app automatically)
+build/
+
+# Ignore Git-related files
+.git/
+
+# Ignore local environment variable files
+.env.local

@@ -1,0 +1,130 @@
+/* Container for SignIn page */
+.signInContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f7fc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added slight shadow for depth */
+}
+
+/* Title */
+.signInTitle {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #333;
+  text-align: center; /* Ensures the title is centered */
+}
+
+/* Subtitle */
+.signInSubtitle {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 40px;
+  text-align: center; /* Ensures the subtitle is centered */
+}
+
+/* Buttons */
+.signInBtn {
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for buttons */
+.signInBtn:hover {
+  background-color: #3367d6;
+  transform: scale(1.05);
+}
+
+/* OTP & Phone Number Inputs */
+.phoneInput, .otpVerification {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Common input styles */
+.phoneInputField, .otpInput {
+  padding: 12px;
+  font-size: 1rem;
+  margin-top: 20px; /* Reduced margin for closer input fields */
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 80%;
+  max-width: 400px; /* Max width to prevent stretching */
+}
+
+/* Focused input styles */
+.phoneInputField:focus, .otpInput:focus {
+  border-color: #4285f4;
+  outline: none; /* Removes the default focus outline */
+}
+
+/* Send OTP and Verify OTP buttons */
+.sendOtpBtn, .verifyOtpBtn {
+  padding: 12px 25px;
+  margin-top: 10px;
+  border-radius: 30px;
+  background-color: #4285f4;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for Send OTP and Verify OTP buttons */
+.sendOtpBtn:hover, .verifyOtpBtn:hover {
+  background-color: #3367d6;
+  transform: scale(1.05);
+}
+
+/* Back to SignIn text style */
+.bankWord {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #515151;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Backward icon color */
+.Fabackword {
+  color: #3367d6;
+  margin-left: 5px; /* Small space between text and icon */
+}
+
+/* Error message style */
+.errorMessage {
+  color: red;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+/* Optional smooth animations for the sign-in container */
+.signInContainer {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animation for smooth fade-in */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
