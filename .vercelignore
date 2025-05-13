@@ -8,4 +8,4 @@ build/
 .git/
 
 # Ignore local environment variable files
-.env.local
+.env

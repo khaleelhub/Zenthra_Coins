@@ -45,10 +45,12 @@ const HomePage = () => {
     const profile = () => {
         navigate('/Userprofile');
     };
-
-    const Earn = () => {
+   const Earn = () => {
         navigate('/ads')
     };
+    const zenthrah = () => {
+        navigate('/Zenthra')
+    }
     return (
         <div className="dashboardContainer">
             <h1 className="welcomeTitle">👋 Welcome, {userName}</h1>
@@ -100,6 +102,7 @@ const HomePage = () => {
                 <button type="button" onClick={profile} className="btnProfile">Go to Profile</button>
                 <button type="button" onClick={Earn} className="btnProfile">Earn </button>
             </div>
+            <button type="button" onClick={zenthrah} className='zenthrah'>Z</button>
         </div>
     );
 };

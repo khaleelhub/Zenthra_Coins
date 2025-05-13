@@ -6,7 +6,15 @@ body {
   font-family: 'Segoe UI', sans-serif;
   color: #333;
 }
-
+.zenthrah {
+  position:fixed;
+  bottom: 20px;
+  right: 70px;
+  border-radius: 10px;
+  font-weight: bold;
+  background: #007259;
+  color: #e0e0e0;
+}
 .dashboardContainer {
   max-width: 1200px;
   margin: 0 auto;
