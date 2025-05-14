@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
-import '../style/infor.css';
 import { getAuth } from 'firebase/auth';
-
+import '/src/pages/style/Infor.css';
 
 
 // Infor.js
