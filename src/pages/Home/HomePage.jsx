@@ -40,7 +40,7 @@ const HomePage = () => {
                 { id: 2, title: "📢 Maintenance Alert", detail: "System maintenance on May 15, 2am–4am UTC." },
             ]);
         }
-    }, []);
+    }, [auth.currentUser, db]);
 
     const profile = () => {
         navigate('/Userprofile');
@@ -61,7 +61,7 @@ const HomePage = () => {
                     <p>Z{zenBalance}</p>
                 </div>
                 <div className="statCard">
-                    <h3>Ad Rewards</h3>
+                    <h3>Ad Rewards </h3>
                     <p>Z{adsBalance}</p>
                 </div>
                 <div className="statCard">

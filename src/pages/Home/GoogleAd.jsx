@@ -1,5 +1,3 @@
-// File: GoogleAd.jsx
-
 import React, { useEffect } from 'react';
 
 const GoogleAd = () => {
@@ -16,8 +14,8 @@ const GoogleAd = () => {
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}
-        data-ad-client="ca-pub-xxxxxxxxxxxxxxxx" // Replace with your client ID
-        data-ad-slot="1234567890"               // Replace with your ad slot
+        data-ad-client="ca-pub-2905761926194202" // ✅ Use your real ID here
+        data-ad-slot="1234567890"               // ✅ Replace with your real ad slot
         data-ad-format="auto"
         data-full-width-responsive="true"
       ></ins>

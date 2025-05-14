@@ -134,6 +134,7 @@ body {
 .historyBox h2 {
   margin-bottom: 15px;
   color: #34495e;
+  text-align: center;
 }
 
 .historyBox ul {
@@ -147,7 +148,9 @@ body {
   border-bottom: 1px solid #ecf0f1;
   font-size: 0.95rem;
 }
-
+.History {
+  align-self: center;
+}
 .status {
   font-weight: bold;
   display: inline-block;

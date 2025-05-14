@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../style/Wallet.css';
 import { auth, db } from '/src/firebase.js'
 import { collection, addDoc, query, where, onSnapshot, Timestamp } from 'firebase/firestore';
+import { FaHistory, FaTransgender, FaWallet } from 'react-icons/fa';
 
 const Wallet = () => {
   const [amount, setAmount] = useState(0);
@@ -117,7 +118,7 @@ const Wallet = () => {
   return (
     <>
       <div className="Card">
-        <h1 className="Title">Wallet</h1>
+        <h1 className="Title">Wallet <FaWallet/></h1>
         <p className="Subtitle">Manage Your Zenthra Balance</p>
       </div>
 
@@ -189,7 +190,7 @@ const Wallet = () => {
         )}
 
         <button onClick={handleTransaction} disabled={loading}>
-          {loading ? 'Processing...' :
+          {loading ? 'Processing...' : 
             transactionType === 'transfer' ? 'Send Money' :
               transactionType === 'withdraw' ? 'Request Withdraw' : 'Deposit'}
         </button>
@@ -203,7 +204,7 @@ const Wallet = () => {
       </div>
 
       <div className="historyBox">
-        <h2>Transaction History</h2>
+        <h2>Transaction History <FaHistory className='History'/></h2>
         <ul>
           {history.map((h, i) => (
             <li key={i}>

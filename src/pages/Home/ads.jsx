@@ -5,6 +5,8 @@ import { db, auth } from '/src/firebase.js';
 import { doc, getDoc, updateDoc } from 'firebase/firestore';
 import GoogleAd from './GoogleAd';
 import '../style/Ads.css';
+import { getAuth } from 'firebase/auth';
+
 import { useNavigate } from 'react-router-dom';
 
 const Ads = () => {
@@ -13,6 +15,10 @@ const Ads = () => {
     const [showGoogleAd, setShowGoogleAd] = useState(true);
     const [canEarn, setCanEarn] = useState(false);
     const [coinsEarned, setCoinsEarned] = useState(0);
+    const [username, setUserName] = useState();
+
+
+    const Auth = getAuth()
     const navigate = useNavigate();
   
     const user = auth.currentUser;
@@ -55,9 +61,19 @@ const Ads = () => {
     const backToHome = () => {
         navigate('/HomePage')
     }
+
+
+    useEffect(() => {
+  
+      const User  = Auth.currentUser
+      if(user) {
+        setUserName(User.displayName || "User")
+      }
+    }, [Auth.currentUser, user])
     return (
       <div className="adsContainer">
         <button type="button" onClick={backToHome} className='backToHome'> Back To Home </button>
+        <h1>{username}</h1>
         {showGoogleAd ? (
           <div className="googleAdBox">
             <GoogleAd />
